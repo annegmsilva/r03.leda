@@ -23,7 +23,7 @@ public class RecursiveInsertionSort<T extends Comparable<T>> extends
 		if (leftIndex < rightIndex) {
 			T key = array[leftIndex];
 			for (int i = leftIndex + 1; i <= rightIndex; i ++) {
-				if (array[i].compareTo(key) > 0) {
+				if (key.compareTo(array[i]) > 0) {
 					Util.swap(array, leftIndex, i);
 				}
 			}
